@@ -4,7 +4,7 @@ public class ExampleDataType21 {
         byte distance = (byte) 130;
         short theNumberofResidents = 1025;
         float temperature = 60.50f;
-        double weight = 0.5467812345;
+        double weight = 0.453565457;
         long balance = 150000000;
         int number = 0x10;
         System.out.println("Blood group\t\t: " + (byte) bloodGroup);

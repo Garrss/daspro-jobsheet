@@ -15,6 +15,7 @@ public class Salary21 {
         totalSalary=(numAttendance*salary)-(numAbsence*salaryDeduction);
 
         System.out.println("Total salary: "+totalSalary);
+        System.out.println("cek");
     }
     
 }

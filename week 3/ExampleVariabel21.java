@@ -8,7 +8,7 @@ public class ExampleVariabel21 {
         System.out.println(oneofmyhobbies);
         System.out.println("Are you Smart ?" + issmart);
         System.out.println("Gender: "+gender);
-        System.out.println("My current age is"+_age);
+        System.out.println("My current age is "+_age);
         System.out.println(String.format("My GPA is %s and my height is %s meters", $gpa, height));
     }
 }

@@ -16,10 +16,10 @@ public class Selection321 {
         operator = input21.next().charAt(0);
 
     switch (operator) {
-        case '+':
-        result = operand1 + operand2;
-        System.out.println(operand1 + " + " + operand2 + "=" + result);
-        break;
+    case '+':
+    result = operand1 + operand2;
+    System.out.println(operand1 + " + " + operand2 + "=" + result);
+    break;
     case '-':
     result = operand1 - operand2;
     System.out.println(operand1 + " - " + operand2 + "=" + result);

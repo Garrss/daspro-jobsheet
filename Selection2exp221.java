@@ -13,7 +13,7 @@ public class Selection2exp221 {
 
         TotalAngle = Angle1 + Angle2 + Angle3;
 
-        //if(TotalAngle == 180)
+        if(TotalAngle == 180)
             if(Angle1==90 || Angle2==90 || Angle3==90)
                 System.out.println("Right triangle");
             if(Angle1 == Angle2 && Angle2 == Angle3){
@@ -21,7 +21,7 @@ public class Selection2exp221 {
             }else if(Angle1 == Angle2 || Angle2 == Angle3 || Angle1 == Angle3){
                 System.out.println("This is an isosceles triangle");
             }else
-                System.out.println("Not a right triangle");
+                System.out.println("Not a triangle");
         //else
             //System.out.println("Not a triangle");
     }

@@ -21,8 +21,10 @@ public class DoWhileLeaveEntitlement21 {
                     System.out.println("Sisa jatah cuti: " + jatahcuti);
                 } else {
                 System.out.println("Sisa jatah cuti anda tidak mencukupi ");
-                break;
+                continue;
                 }
+            } else {
+                break;
             }
         } while (jatahcuti > 0);
     }

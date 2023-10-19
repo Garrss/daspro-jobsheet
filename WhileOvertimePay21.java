@@ -24,6 +24,10 @@ public class WhileOvertimePay21 {
             overtimepay=overtimehours*100000;
         }else if(position.equalsIgnoreCase("Staff")){
             overtimepay=overtimehours*75000;
+        } else {
+            System.out.println("position invalid");
+            i--;
+            continue;
         }
         totalOvertimePay += overtimepay;
        }

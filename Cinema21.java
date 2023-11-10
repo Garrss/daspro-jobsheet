@@ -1,7 +1,8 @@
 import java.util.Scanner;
+
 public class Cinema21 {
     public static void main(String[] args) {
-        String [][] audience = new String[4][2];
+        String[][] audience = new String[4][2];
 
         audience[0][0] = "Amin";
         audience[0][1] = "Bena";
@@ -16,5 +17,5 @@ public class Cinema21 {
         System.out.printf("%s \t %s\n", audience[2][0], audience[2][1]);
         System.out.printf("%s \t %s\n", audience[3][0], audience[3][1]);
 
-        }
-        }
+    }
+}

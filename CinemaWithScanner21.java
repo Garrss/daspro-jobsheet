@@ -18,6 +18,7 @@ public class CinemaWithScanner21 {
             System.out.println("Enter your choice: ");
             menuChoice = input21.nextInt();
             input21.nextLine();
+
             switch (menuChoice) {
                 case 1:
                     System.out.println("Enter a name: ");
@@ -28,22 +29,31 @@ public class CinemaWithScanner21 {
                     column = input21.nextInt();
                     input21.nextLine();
 
-                    audience[row - 1][column - 1] = name;
+                    // Check if the row and column numbers are within the valid range
+                    if (row >= 0 && row < audience.length && column >= 0 && column < audience[0].length) {
+                        // Assign the name to the specified seat
+                        audience[row][column] = name;
+                        System.out.println("Data input successfull !");
+                    } else {
+                        System.out.println("Invalid row or column number. Please try again.");
+                    }
                     break;
                 case 2:
-                    System.out.println("Audience List: ");
+                    // Show the audience list
                     for (int i = 0; i < audience.length; i++) {
-                        for (int j = 0; j < audience[i].length; j++) {
-                            System.out.print(audience[i][j] + " ");
+                        for (int j = 0; j < audience[0].length; j++) {
+                            System.out.print(audience[i][j] + "\t");
                         }
                         System.out.println();
                     }
                     break;
                 case 3:
-                    System.out.println("Exiting...");
-                    return;
+                    // Exit the programs
+                    System.exit(0);
+                    break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
+                    break;
             }
         }
     }

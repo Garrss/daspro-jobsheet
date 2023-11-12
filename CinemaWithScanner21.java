@@ -43,13 +43,21 @@ public class CinemaWithScanner21 {
                     } else {
                         System.out.println("Invalid row or column number. Please try again.");
                     }
+
                     break;
 
                 case 2:
-                    // Show the audience list
                     for (int i = 0; i < audience.length; i++) {
-                        for (int j = 0; j < audience[0].length; j++) {
-                            System.out.print(audience[i][j] + "\t");
+                        for (int j = 0; j < audience[1].length; j++) {
+                            if (audience[i][j] == null) {
+                                audience[i][j] = "***";
+                            }
+                        }
+                    }
+                    // Print the audience list
+                    for (int i = 0; i < audience.length; i++) {
+                        for (int j = 0; j < audience[i].length; j++) {
+                            System.out.println(audience[i][j] + " ");
                         }
                         System.out.println();
                     }

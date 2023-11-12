@@ -29,6 +29,12 @@ public class CinemaWithScanner21 {
                     column = input21.nextInt();
                     input21.nextLine();
 
+                    if (audience[row][column] != null) {
+                        System.out
+                                .println("Warning: The selected seat is already occupied. Please choose another seat.");
+                        break; // Exit the switch statement and go back to the menu
+                    }
+
                     // Check if the row and column numbers are within the valid range
                     if (row >= 0 && row < audience.length && column >= 0 && column < audience[0].length) {
                         // Assign the name to the specified seat
@@ -38,6 +44,7 @@ public class CinemaWithScanner21 {
                         System.out.println("Invalid row or column number. Please try again.");
                     }
                     break;
+
                 case 2:
                     // Show the audience list
                     for (int i = 0; i < audience.length; i++) {
@@ -47,10 +54,12 @@ public class CinemaWithScanner21 {
                         System.out.println();
                     }
                     break;
+
                 case 3:
                     // Exit the programs
                     System.exit(0);
                     break;
+
                 default:
                     System.out.println("Invalid choice. Please try again.");
                     break;

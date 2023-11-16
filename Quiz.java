@@ -15,10 +15,17 @@ public class Quiz {
                 System.out.print("Tebak angka (1-10): ");
                 int answer = sc.nextInt();
                 sc.nextLine();
-                success = (answer == number);
+
+                if (answer == number) {
+                    success = true;
+                } else {
+                    System.out.println("Jawaban anda " + (answer < number ? "lebih kecil" : "lebih besar")
+                            + " dari angka yang benar.");
+                }
             } while (!success);
             System.out.print("Apakah anda ingin mengulang permainan (Y/y)?");
             menu = sc.nextLine().charAt(0);
         } while (menu == 'y' || menu == 'Y');
+        System.out.println("Terima Kasih sudah bermain. Selamat tinggal!");
     }
 }

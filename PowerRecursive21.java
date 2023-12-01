@@ -22,6 +22,7 @@ public class PowerRecursive21 {
     static void printPower(int base, int pow) {
         String series = "";
         for (int i = 0; i < pow; i++) {
+            series += base;
             if (i < pow - 1) {
                 series += "x";
             }
